@@ -7,18 +7,24 @@ import {
   ScanCommand,
 } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, GetCommand } from "@aws-sdk/lib-dynamodb";
+import env from "./env";
 
-const client = new DynamoDBClient({
-  endpoint: "http://0.0.0.0:4566",
-  region: "us-east-1",
-  credentials: {
-    accessKeyId: "dummy",
-    secretAccessKey: "dummy",
-  },
-});
-const ddb = DynamoDBDocumentClient.from(client);
+function getClient() {
+  console.count("DB_CONNECTION");
+  const client = new DynamoDBClient({
+    endpoint: env("DYNAMODB_ENDPOINT"),
+    region: "us-east-1",
+    credentials: {
+      accessKeyId: "dummy",
+      secretAccessKey: "dummy",
+    },
+  });
+  const ddb = DynamoDBDocumentClient.from(client);
+  return ddb;
+}
 
 export async function getOrders() {
+  const client = getClient();
   const command = new GetCommand({
     TableName: "order",
     Key: {
@@ -26,34 +32,39 @@ export async function getOrders() {
     },
   });
 
-  const data = await ddb.send(command);
+  const data = await client.send(command);
 
   return data;
 }
 
-export async function scanAllItems() {
+export async function scanAllItems(tableName?: string) {
+  if (!tableName) {
+    return [];
+  }
+  const client = getClient();
   const command = new ScanCommand({
     TableName: "order",
   });
-  const data = await ddb.send(command);
+  const data = await client.send(command);
 
   return data;
 }
 
 export async function getTableMetaData() {
+  const client = getClient();
   const command = new DescribeTableCommand({
     TableName: "order",
   });
 
-  const data = await ddb.send(command);
-  console.log(data);
+  const data = await client.send(command);
   return data;
 }
 
 export async function listTables() {
+  const client = getClient();
   const command = new ListTablesCommand({});
 
-  const data = await ddb.send(command);
+  const data = await client.send(command);
 
   return data;
 }
