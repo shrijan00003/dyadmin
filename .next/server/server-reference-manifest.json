@@ -1,0 +1,46 @@
+{
+  "node": {
+    "62769fe84cc11d6839cc6a42bf131765faa5f69c": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/.pnpm/next@15.0.0-rc.0_react-dom@19.0.0-rc-f994737d14-20240522_react@19.0.0-rc-f994737d14-20240522/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fshrijantripathi%2FDocuments%2Fproject%2Fopen-source%2Fdynamodb-admins%2Fda-0.0.1%2Fapp%2Fservices%2Fdata.ts%22%2C%5B%22scanAllItems%22%2C%22getOrders%22%2C%22getTableMetaData%22%2C%22updateTableURL%22%2C%22listTables%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "7e03c50439126aab8eeeb2f54926ff0ef7a48ae2": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/.pnpm/next@15.0.0-rc.0_react-dom@19.0.0-rc-f994737d14-20240522_react@19.0.0-rc-f994737d14-20240522/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fshrijantripathi%2FDocuments%2Fproject%2Fopen-source%2Fdynamodb-admins%2Fda-0.0.1%2Fapp%2Fservices%2Fdata.ts%22%2C%5B%22scanAllItems%22%2C%22getOrders%22%2C%22getTableMetaData%22%2C%22updateTableURL%22%2C%22listTables%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "8488261ba5fa36a5589ad348f80d20f3d67ef619": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/.pnpm/next@15.0.0-rc.0_react-dom@19.0.0-rc-f994737d14-20240522_react@19.0.0-rc-f994737d14-20240522/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fshrijantripathi%2FDocuments%2Fproject%2Fopen-source%2Fdynamodb-admins%2Fda-0.0.1%2Fapp%2Fservices%2Fdata.ts%22%2C%5B%22scanAllItems%22%2C%22getOrders%22%2C%22getTableMetaData%22%2C%22updateTableURL%22%2C%22listTables%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "99ff558b491b9f94d311e86b619dec13261bb6d2": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/.pnpm/next@15.0.0-rc.0_react-dom@19.0.0-rc-f994737d14-20240522_react@19.0.0-rc-f994737d14-20240522/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fshrijantripathi%2FDocuments%2Fproject%2Fopen-source%2Fdynamodb-admins%2Fda-0.0.1%2Fapp%2Fservices%2Fdata.ts%22%2C%5B%22scanAllItems%22%2C%22getOrders%22%2C%22getTableMetaData%22%2C%22updateTableURL%22%2C%22listTables%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "a62ebc8b917f05f625280fd7ccf0fdf7d62c57d8": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/.pnpm/next@15.0.0-rc.0_react-dom@19.0.0-rc-f994737d14-20240522_react@19.0.0-rc-f994737d14-20240522/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fshrijantripathi%2FDocuments%2Fproject%2Fopen-source%2Fdynamodb-admins%2Fda-0.0.1%2Fapp%2Fservices%2Fdata.ts%22%2C%5B%22scanAllItems%22%2C%22getOrders%22%2C%22getTableMetaData%22%2C%22updateTableURL%22%2C%22listTables%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "zxktAH4QiNoZRAUYjt+LnlUMwV5Gz5RmlE+OWf8PSkQ="
+}
