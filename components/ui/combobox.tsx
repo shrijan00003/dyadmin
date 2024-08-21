@@ -18,6 +18,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { updateTableURL } from "@/app/services/data";
 
 interface IComboboxProps {
   items: {
@@ -50,7 +51,7 @@ export function Combobox(props: IComboboxProps) {
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." className="h-9" />
+          <CommandInput placeholder="Search..." className="h-9" />
           <CommandList>
             <CommandEmpty>No framework found.</CommandEmpty>
             <CommandGroup>
@@ -60,6 +61,7 @@ export function Combobox(props: IComboboxProps) {
                   value={item.value}
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);
+                    updateTableURL(currentValue);
                     setOpen(false);
                   }}
                 >
